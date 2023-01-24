@@ -1,0 +1,156 @@
+@use "../scss/abstracts/" as *;
+@use "../scss/base/" as *;
+
+.composition {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(9, 4vw);
+  perspective: 5000;
+
+  &:hover frame {
+    transform: rotateY(0deg) rotateX(0deg);
+
+    &.composition__frame--1 {
+      transform: translate(-3rem, -3rem);
+    }
+
+    &.composition__frame--2 {
+      transform: translate(0, -3rem);
+    }
+
+    &.composition__frame--3 {
+      transition-delay: 0s;
+    }
+
+    &.composition__frame--4 {
+      transform: translate(-6rem, -3rem);
+    }
+
+    &.composition__frame--5 {
+      transform: translate(-4rem, -3rem);
+    }
+
+    &:hover {
+      filter: brightness(120%) saturate(120%);
+    }
+  }
+
+  frame {
+    transform: rotateY(-20deg) rotateX(20deg);
+    transform-origin: bottom left;
+  }
+
+  *,
+  & {
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  &__frame {
+    &--1 {
+      grid-row: 1 / span 3;
+      grid-column: 1 / span 3;
+      //   z-index: 5;
+
+      position: absolute;
+      width: 183px;
+      height: 120px;
+      left: 0px;
+      top: 0px;
+
+      background: url("../../assets/animations/mockup1.svg"),
+        radial-gradient(
+          218.51% 281.09% at 100% 100%,
+          rgba(253, 63, 51, 0.6) 0%,
+          rgba(76, 0, 200, 0.6) 45.83%,
+          rgba(76, 0, 200, 0.6) 100%
+        );
+
+      box-shadow: 0px 16.3881px 32.7761px rgba(99, 30, 187, 0.5),
+        inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10.9254px);
+
+      border-radius: 16px;
+    }
+
+    &--2 {
+      grid-row: 1 / span 2;
+      grid-column: 3 / span 5;
+      //   z-index: 0;
+
+      position: absolute;
+      width: 183px;
+      height: 120px;
+      left: 214px;
+      top: 0px;
+
+      background: url("../../assets/animations/mockup2.svg"),
+        linear-gradient(
+          198.85deg,
+          #4316db 12.72%,
+          #9076e7 54.49%,
+          #a2eeff 100.01%
+        );
+      box-shadow: 0px 8.19119px 16.3824px rgba(0, 0, 0, 0.1),
+        0px 16.3824px 32.7648px rgba(0, 0, 0, 0.15),
+        inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10.9216px);
+
+      border-radius: 16px;
+    }
+
+    &--3 {
+      grid-row: 2 / span 6;
+      grid-column: 1 / span 6;
+
+      position: absolute;
+      width: 701px;
+      height: 428px;
+      left: 37px;
+      top: 60px;
+
+      background: url("../../assets/animations/mockup3.svg"),
+        rgba(23, 12, 61, 0.5);
+      box-shadow: inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+
+      border-radius: 8px;
+    }
+
+    &--4 {
+      grid-row: 5 / span 8;
+      grid-column: 1 / span 3;
+
+      position: absolute;
+      width: 399px;
+      height: 274px;
+      left: 194px;
+      top: 262px;
+
+      background: url("../../assets/animations/mockup4.svg"),
+        rgba(39, 20, 62, 0.3);
+      box-shadow: inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+
+      border-radius: 8px;
+    }
+
+    &--5 {
+      grid-row: 5 / span 8;
+      grid-column: 4 / span 7;
+
+      position: absolute;
+      width: 412px;
+      height: 274px;
+      left: 616px;
+      top: 262px;
+
+      background: url("../../assets/animations/mockup5.svg"),
+        rgba(39, 20, 62, 0.2);
+      box-shadow: inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+
+      border-radius: 8px;
+    }
+  }
+}

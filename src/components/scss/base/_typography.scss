@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.heading-primary {
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-white;
+  margin-bottom: 3rem;
+
+  &--brand {
+    background-image: linear-gradient(
+      to right bottom,
+      #ff5100 0%,
+      #ff0032 50%,
+      #d30000 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

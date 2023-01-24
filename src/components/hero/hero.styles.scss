@@ -1,0 +1,36 @@
+@use "../scss/abstracts/" as *;
+@use "../scss/base/" as *;
+
+.section-hero {
+  background: linear-gradient(180deg, #2400ff 100%, #fff 0%);
+}
+
+.hero {
+  max-width: 140rem;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10rem;
+  align-items: center;
+  padding: 10rem 0;
+
+  &__txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 53rem;
+    padding: 10rem auto;
+  }
+
+  &__description {
+    font-size: 2.3rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 5rem;
+  }
+
+  &__btn-container {
+    display: flex;
+    gap: 3rem;
+  }
+}

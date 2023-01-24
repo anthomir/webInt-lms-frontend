@@ -1,0 +1,84 @@
+@use "../scss/abstracts/" as *;
+@use "../scss/base/" as *;
+
+.wrapper {
+  width: 280px;
+  height: 77px;
+  padding: 1.4rem;
+  background: linear-gradient(180deg, #ffffff 0%, #d9dfff 100%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 20px 40px rgba(23, 0, 102, 0.2),
+    inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 5.3rem auto;
+  align-items: center;
+  gap: 1.4rem;
+
+  *,
+  & {
+    transition: 0.3s;
+  }
+
+  &:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+      0px 30px 60px rgba(23, 0, 102, 0.5),
+      inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
+    transform: translateY(-0.3rem);
+  }
+
+  &__textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__title {
+    color: $color-black;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    opacity: 0.7;
+  }
+
+  &__creditIcon {
+    width: 2.9rem;
+    height: 2.9rem;
+  }
+
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #f86161 100%, #ff4976 0%);
+    box-shadow: 0px 10px 20px rgba(182, 153, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__ring {
+    position: absolute;
+    top: -1.5rem;
+    left: -1.6rem;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    .wrapper__ring {
+      transform: rotate(30deg) scale(1.1) translate(0.1rem, 0.1rem);
+    }
+
+    .wrapper__creditIcon {
+      transform: scale(1.1);
+    }
+
+    .wrapper__icon {
+      filter: hue-rotate(-10deg) brightness(110%) saturate(120%);
+    }
+  }
+}
