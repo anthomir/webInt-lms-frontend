@@ -1,0 +1,33 @@
+@use "../scss/abstracts/" as *;
+@use "../scss/base/" as *;
+
+.wave__wrapper {
+  position: relative;
+
+  .hero__background {
+    background: linear-gradient(180deg, #2400ff 0%, #fff 100%);
+    position: absolute;
+    width: 100vw;
+    height: 100rem;
+    z-index: -1;
+  }
+
+  .wave {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    filter: blur(6rem);
+
+    &--1 {
+      top: 10rem;
+    }
+
+    &--2 {
+      top: 35rem;
+    }
+
+    &--3 {
+      top: 55rem;
+    }
+  }
+}

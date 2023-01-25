@@ -2,12 +2,13 @@
 @use "../../components/scss/base/" as *;
 
 .header {
+  margin-top: 2rem;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 2rem 20.5rem;
+  padding: 2rem 20rem;
 
   &__icon {
     color: #ffffffb3;

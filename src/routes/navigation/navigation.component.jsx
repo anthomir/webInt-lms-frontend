@@ -32,11 +32,10 @@ const Navigation = () => {
                 <LiveStreams />
                 Tutorials
               </Link>
-
-              <Link>
+              <Link to="/" className="header__nav--link">
                 <Search />
               </Link>
-              <Link>
+              <Link to="/" className="header__nav--link">
                 <Account />
               </Link>
             </li>
