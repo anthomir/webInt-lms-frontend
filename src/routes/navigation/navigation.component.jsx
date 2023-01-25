@@ -1,32 +1,45 @@
 import { Link, Outlet } from "react-router-dom";
 import { Fragment } from "react";
+
+import { ReactComponent as Logo } from "../../assets/icons/header-logo.svg";
+import { ReactComponent as Courses } from "../../assets/icons/courses.svg";
+import { ReactComponent as Tutorials } from "../../assets/icons/tutorials.svg";
+import { ReactComponent as LiveStreams } from "../../assets/icons/livestreams.svg";
+import { ReactComponent as Search } from "../../assets/icons/search.svg";
+import { ReactComponent as Account } from "../../assets/icons/account.svg";
 import "./navigation.styles.scss";
 
 const Navigation = () => {
   return (
     <Fragment>
       <header className="header">
-        <Link to="/">
-          <h1>Home</h1>
+        <Link to="/" className="header__icon">
+          <Logo />
         </Link>
 
         <nav className="header__nav">
           <ul className="header__nav--list">
-            {/* <li className="header__nav--item">
-              <Link to="/gallery" className="header__nav--link">
-                GALLERY
+            <li className="header__nav--item">
+              <Link to="/" className="header__nav--link">
+                <Courses />
+                Courses
+              </Link>
+              <Link to="/" className="header__nav--link">
+                <Tutorials />
+                Tutorials
+              </Link>
+              <Link to="/" className="header__nav--link">
+                <LiveStreams />
+                Tutorials
+              </Link>
+
+              <Link>
+                <Search />
+              </Link>
+              <Link>
+                <Account />
               </Link>
             </li>
-            <li className="header__nav--item">
-              <Link to="/products" className="header__nav--link">
-                PRODUCTS
-              </Link>
-            </li>
-            <li className="header__nav--item">
-              <Link to="/sign-in" className="header__nav--link">
-                SIGN IN
-              </Link>
-            </li> */}
           </ul>
         </nav>
       </header>
