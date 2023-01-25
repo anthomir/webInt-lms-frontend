@@ -10,7 +10,10 @@ const Hero = () => {
       <WaveBackground />
       <div className="hero">
         <div className="hero__txt">
-          <h1 className="heading-primary">Unlock your potential with Mavens</h1>
+          <h1 className="heading-primary">
+            Unlock your potential with{" "}
+            <span className="heading-primary__mavens">Mavens</span>
+          </h1>
 
           <p className="hero__description">
             Achieve your professional goals with Mavens <br />

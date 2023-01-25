@@ -4,17 +4,16 @@
   font-size: 7rem;
   font-weight: 700;
   line-height: 1.2;
-  color: $color-white;
   margin-bottom: 3rem;
+  background: linear-gradient(180deg, #730040 0%, #301cbe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 
-  &--brand {
-    background-image: linear-gradient(
-      to right bottom,
-      #ff5100 0%,
-      #ff0032 50%,
-      #d30000 100%
-    );
+  &__mavens {
+    background: linear-gradient(180deg, #ffd7ff 0%, #ffb6ff 100%);
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
   }
 }
