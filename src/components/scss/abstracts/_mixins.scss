@@ -1,0 +1,100 @@
+@use "./variables" as *;
+
+$themes: (
+  light: (
+    text1: black,
+    text2: rgba(0, 0, 0, 0.7),
+    primary: #3913b8,
+    secondary: #2fb2fc,
+    background-color: #f2f6ff,
+    card: (
+      background-color: rgba(255, 255, 255, 0.6),
+      box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3) inset 0 0 0 0.5px
+        rgba(255, 255, 255, 0.6),
+      background-color-full: rgba(255, 255, 255, 1),
+    ),
+    card-hover: (
+      background-color: rgba(68, 66, 178, 0.1),
+      box-shadow: inset 0px 0px 0px 0.5px rgba(68, 66, 178, 0.2),
+    ),
+    pricing-card: (
+      background-color: rgba(255, 255, 255, 0.3),
+    ),
+    status: (
+      background-color: rgba(68, 66, 178, 0.1),
+    ),
+    modal: (
+      background-color: rgba(255, 255, 255, 0.6),
+      box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3) inset 0 0 0 0.5px
+        rgba(255, 255, 255, 0.6),
+      background-color-full: rgba(255, 255, 255, 1),
+    ),
+  ),
+  dark: (
+    text1: white,
+    text2: rgba(255, 255, 2555, 0.7),
+    background-color: #1f1f47,
+    card: (
+      background-color: rgba(25, 24, 63, 0.98),
+      box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25) inset 0 0 0 0.5px
+        rgba(255, 255, 255, 0.2),
+      background-color-full: rgba(15, 14, 71, 1),
+    ),
+    card-hover: (
+      background-color: rgba(255, 255, 255, 0.1),
+      box-shadow: inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2),
+    ),
+    pricing-card: (
+      background-color: rgba(31, 31, 71, 0.6),
+    ),
+    status: (
+      background-color: rgba(0, 0, 0, 0.2),
+    ),
+    modal: (
+      background-color: rgba(50, 61, 109, 0.5),
+      box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25) inset 0 0 0 0.5px
+        rgba(255, 255, 255, 0.3),
+      background-color-full: rgba(15, 14, 71, 1),
+    ),
+  ),
+);
+
+// MEDIA QUERY BREAKPOINTS
+/*
+  0 - 600px -> mobile
+  600px - 960px -> tablet-portrait
+  960px - 1200px -> tablet-landscape
+  1200px - 1800px -> desktop
+  1800px + -> desktop-large
+
+  $breakpoint = {
+    mobile: 0,
+    tabletPortrait: 600,
+    tabletLandscape: 960,
+    desktop: 1200,
+    desktopLarge: 1800
+  }
+*/
+@mixin responsive($breakpoint) {
+  @if $breakpoint == "mobile" {
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      @content;
+    }
+  } @else if $breakpoint == "tabletPortrait" {
+    @media only screen and (max-width: 60em) {
+      //960px
+      @content;
+    }
+  } @else if $breakpoint == "tabletLandscape" {
+    @media only screen and (max-width: 75em) {
+      //1200px
+      @content;
+    }
+  } @else if $breakpoint == "desktopLarge" {
+    @media only screen and (min-width: 112.5em) {
+      //1800px
+      @content;
+    }
+  }
+}

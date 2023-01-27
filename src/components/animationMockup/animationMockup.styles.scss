@@ -74,9 +74,8 @@
     }
 
     &--2 {
-      grid-row: 1 / span 2;
+      grid-row: 1 / span 3;
       grid-column: 3 / span 5;
-      //   z-index: 0;
 
       position: absolute;
       width: 183px;
@@ -85,12 +84,7 @@
       top: 0px;
 
       background: url("../../assets/animations/mockup2.svg"),
-        linear-gradient(
-          198.85deg,
-          #4316db 12.72%,
-          #9076e7 54.49%,
-          #a2eeff 100.01%
-        );
+        linear-gradient(180deg, #2fb8ff 0%, #9eecd9 100%);
       box-shadow: 0px 8.19119px 16.3824px rgba(0, 0, 0, 0.1),
         0px 16.3824px 32.7648px rgba(0, 0, 0, 0.15),
         inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
@@ -100,8 +94,8 @@
     }
 
     &--3 {
-      grid-row: 2 / span 6;
-      grid-column: 1 / span 6;
+      grid-row: 2 / span 9;
+      grid-column: 1 / span 10;
 
       position: absolute;
       width: 701px;
@@ -118,8 +112,8 @@
     }
 
     &--4 {
-      grid-row: 5 / span 8;
-      grid-column: 1 / span 3;
+      grid-row: 6 / span 9;
+      grid-column: 1 / span 4;
 
       position: absolute;
       width: 399px;
@@ -136,8 +130,8 @@
     }
 
     &--5 {
-      grid-row: 5 / span 8;
-      grid-column: 4 / span 7;
+      grid-row: 6 / span 9;
+      grid-column: 5 / span 10;
 
       position: absolute;
       width: 412px;
