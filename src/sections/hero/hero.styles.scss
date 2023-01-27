@@ -1,9 +1,10 @@
-@use "../scss/abstracts/" as *;
-@use "../scss/base/" as *;
+@use "../../components/scss/abstracts/" as *;
+@use "../../components/scss/base/" as *;
 
 .section-hero {
   // background: linear-gradient(180deg, #2400ff 0%, #fff 100%);
   // padding: 15rem 0;
+  // overflow: hidden;
 }
 
 .hero {

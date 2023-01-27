@@ -1,7 +1,7 @@
-import HeroButton from "../heroButton/heroButton.component";
-import AnimationMockup from "../animationMockup/animationMockup.component";
-import WaveBackground from "../backgrounds/waveBackground.component";
-import "../scss/base/_typography.scss";
+import HeroButton from "../../components/heroButton/heroButton.component";
+import AnimationMockup from "../../components/animationMockup/animationMockup.component";
+import WaveBackground from "../../components/backgrounds/waveBackground.component";
+import "../../components/scss/base/_typography.scss";
 import "./hero.styles.scss";
 
 const Hero = () => {

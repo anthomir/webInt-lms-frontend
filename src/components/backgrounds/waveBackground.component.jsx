@@ -1,7 +1,7 @@
-import "./waveBackground.styles.scss";
 import { ReactComponent as WaveOne } from "../../assets/waves/hero-wave-1.svg";
 import { ReactComponent as WaveTwo } from "../../assets/waves/hero-wave-2.svg";
 import { ReactComponent as WaveThree } from "../../assets/waves/hero-wave-3.svg";
+import "./waveBackground.styles.scss";
 
 const WaveBackground = () => {
   return (

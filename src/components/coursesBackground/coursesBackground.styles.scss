@@ -1,0 +1,43 @@
+@use "../scss/abstracts/" as *;
+@use "../scss/base/" as *;
+
+.couresesWave__wrapper {
+  position: relative;
+  width: 100vw;
+
+  .coursesWave {
+    position: absolute;
+    z-index: -4;
+    width: 100vw;
+    // filter: blur(4rem);
+
+    &--2 {
+      top: 40rem;
+      z-index: -1;
+    }
+  }
+
+  .coursesCircle {
+    position: absolute;
+    z-index: -2;
+
+    &--1 {
+      top: 18rem;
+      transform: scale(0.8);
+      left: 10rem;
+    }
+
+    &--2 {
+      top: 18rem;
+      left: 25rem;
+      transform: scale(0.8);
+    }
+  }
+
+  .coursesLines {
+    position: absolute;
+    width: 100%;
+    z-index: -3;
+    top: 5rem;
+  }
+}

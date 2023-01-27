@@ -5,17 +5,18 @@
   position: relative;
 
   .hero__background {
-    background: linear-gradient(180deg, #2400ff 0%, #fff 100%);
+    background: linear-gradient(180deg, #2400ff 0%, #f2f6ff 100%);
     position: absolute;
     width: 100vw;
     height: 100rem;
     z-index: -1;
+    overflow: hidden;
   }
 
   .wave {
     position: absolute;
     z-index: -1;
-    width: 100vw;
+    width: 100%;
     filter: blur(4rem);
 
     &--1 {
@@ -23,11 +24,11 @@
     }
 
     &--2 {
-      top: 40rem;
+      top: 45rem;
     }
 
     &--3 {
-      top: 55rem;
+      top: 65rem;
     }
   }
 }

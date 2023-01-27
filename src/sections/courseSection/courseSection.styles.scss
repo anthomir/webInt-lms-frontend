@@ -1,0 +1,80 @@
+@use "../../components/scss/abstracts/" as *;
+@use "../../components/scss/base/" as *;
+
+.courses-background {
+  width: 100vw;
+}
+
+.courses {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 45rem auto;
+  grid-gap: 8rem;
+  align-items: end;
+  padding: 12rem 0;
+  color: #f2f6ff;
+
+  &__heading {
+  }
+
+  &__txt {
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    font-size: 2.1rem;
+    font-weight: 200;
+    line-height: 1.4;
+  }
+
+  &__logoWrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2rem;
+  }
+
+  &__techLogo {
+    width: 4.3rem;
+    height: 4.3rem;
+  }
+
+  &__search {
+    position: relative;
+  }
+
+  &__input {
+    width: 204px;
+    height: 44px;
+
+    background: linear-gradient(
+      180deg,
+      rgba(99, 106, 150, 0.4) 0%,
+      rgba(182, 186, 214, 0.25) 100%
+    );
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    z-index: 1;
+    padding: 0 5rem;
+    font-size: 1.8rem;
+  }
+
+  &__searchLens {
+    position: absolute;
+    z-index: 2;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  &__duration {
+    width: 140rem;
+  }
+}
