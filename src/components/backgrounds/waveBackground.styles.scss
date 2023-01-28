@@ -5,7 +5,8 @@
   position: relative;
 
   .hero__background {
-    background: linear-gradient(180deg, #2400ff 0%, #f2f6ff 100%);
+    background: linear-gradient(189.16deg, #5e2dff 13.57%, #511ff6 98.38%);
+
     position: absolute;
     width: 100vw;
     height: 100rem;
@@ -17,14 +18,15 @@
     position: absolute;
     z-index: -1;
     width: 100%;
-    filter: blur(4rem);
 
     &--1 {
-      top: 15rem;
+      top: 14rem;
+      filter: blur(4rem);
     }
 
     &--2 {
-      top: 45rem;
+      top: 35rem;
+      filter: blur(3rem);
     }
 
     &--3 {

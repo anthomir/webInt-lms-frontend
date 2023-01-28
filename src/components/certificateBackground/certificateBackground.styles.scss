@@ -1,0 +1,13 @@
+@use "../scss/abstracts/" as *;
+@use "../scss/base/" as *;
+
+.certificateBackground__wrapper {
+  position: relative;
+  width: 100vw;
+
+  .certificate-bck {
+    position: absolute;
+    z-index: -20;
+    width: 100%;
+  }
+}
