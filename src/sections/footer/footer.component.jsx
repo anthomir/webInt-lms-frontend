@@ -91,7 +91,7 @@ const Footer = () => {
           <ul class="footer__nav">
             <li>
               <p href="#" class="footer__nav--link">
-                About 2Fit
+                About Mavens
               </p>
             </li>
             <li>
