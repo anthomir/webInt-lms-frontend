@@ -1,3 +1,4 @@
+import Footer from "../../sections/footer/footer.component";
 import CertificateSection from "../../sections/certificateSection/certificateSection.component";
 import CourseSection from "../../sections/courseSection/courseSection.component";
 import TestimonySection from "../../sections/testimonySection/testimonySection.component";
@@ -11,6 +12,7 @@ const Home = () => {
       <CourseSection />
       <CertificateSection />
       <TestimonySection />
+      <Footer />
     </>
   );
 };
