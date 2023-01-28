@@ -64,7 +64,7 @@
     &--card1 {
       width: 33.5rem;
       height: 22rem;
-      bottom: -1rem;
+      bottom: 5rem;
       left: 8rem;
       right: 0%;
       z-index: -6;
@@ -157,6 +157,32 @@
       font-size: 1.8rem;
       line-height: 1.4;
       // font-weight: 200;
+    }
+
+    &--createAccount {
+      width: 183px;
+      height: 44px;
+
+      background: linear-gradient(
+        180deg,
+        rgba(24, 32, 79, 0.4) 0%,
+        rgba(24, 32, 79, 0.25) 100%
+      );
+      border: 0.5px solid rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(20px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 30px;
+      color: #f2f6ff;
+      transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      &:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+          0px 20px 40px rgba(23, 0, 102, 0.2),
+          inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
+      }
     }
   }
 }

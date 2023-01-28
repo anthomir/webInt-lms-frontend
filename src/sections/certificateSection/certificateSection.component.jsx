@@ -76,6 +76,10 @@ const CertificateSection = () => {
             Earn a certificate and showcase your projects on Mavens after
             successfully completing a course.
           </p>
+
+          <button className="certificate__textWrapper--createAccount">
+            Create Account
+          </button>
         </div>
       </div>
     </section>
