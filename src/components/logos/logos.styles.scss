@@ -1,0 +1,9 @@
+@use "../scss/abstracts/" as *;
+@use "../scss/base/" as *;
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+}

@@ -1,0 +1,14 @@
+@use "../scss/abstracts/" as *;
+@use "../scss/base/" as *;
+
+.testimonyWave__wrapper {
+  position: relative;
+  width: 100vw;
+
+  .testimony-bck {
+    top: 20rem;
+    position: absolute;
+    z-index: -20;
+    width: 100%;
+  }
+}

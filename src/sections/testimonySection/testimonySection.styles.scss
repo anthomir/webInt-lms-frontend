@@ -1,0 +1,157 @@
+@use "../../components/scss/abstracts/" as *;
+@use "../../components/scss/base/" as *;
+
+.testimony-background {
+  width: 100vw;
+}
+
+.testimony {
+  &__user {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 10rem 0;
+    color: #f2f6ff;
+  }
+
+  &__userCard {
+    width: 340px;
+    height: 251px;
+    background: rgba(15, 14, 71, 0.5);
+    box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 2.8em 2rem;
+    display: grid;
+
+    &--3 {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 3rem 0;
+    }
+  }
+
+  .user__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    // margin-bottom: -1rem;
+
+    &--image {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+
+      &-1 {
+        background-image: url("../../assets/avatars/Mir.jpg");
+      }
+
+      &-2 {
+        background-image: url("../../assets/avatars/harsh.jpg");
+      }
+    }
+
+    &--name {
+      font-size: 1.8rem;
+      margin-left: 0.8rem;
+      font-weight: 400;
+    }
+
+    &--job {
+      font-size: 1.4rem;
+      color: #ff9595;
+      margin-left: 0.8rem;
+    }
+
+    &--content {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      margin-left: 0.8rem;
+    }
+
+    &--teamHeading {
+      margin-left: 0;
+      font-size: 1.6rem;
+    }
+
+    &--count {
+      font-size: 2.6rem;
+    }
+
+    &--info {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+  }
+
+  &__companies {
+    max-width: 100rem;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+  }
+
+  &__who {
+    .who__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      max-width: 46rem;
+      margin: 0 auto;
+
+      &--title {
+        font-size: 1.8rem;
+      }
+
+      &--subtitle {
+        font-size: 4rem;
+        color: #f2f6ff;
+      }
+
+      &--content {
+        font-size: 1.7rem;
+        text-align: center;
+        line-height: 1.6;
+        color: #f2f6ff;
+      }
+    }
+  }
+
+  &__instructor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 10rem 0;
+
+    &--1,
+    &--2 {
+      width: 616px;
+      height: 400px;
+      border: 0.5px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+    }
+
+    &--1 {
+      background: url("../../assets/animations/Sai-Card.svg"),
+        rgba(15, 14, 71, 0.3);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--2 {
+      background: url("../../assets/animations/Robin-Card.svg"),
+        rgba(15, 14, 71, 0.3);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
