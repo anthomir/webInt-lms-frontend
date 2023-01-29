@@ -3,11 +3,6 @@
 
 .certificate-background {
   width: 100vw;
-
-  @include responsive(mobile) {
-    max-width: 100%;
-    overflow-x: 0;
-  }
 }
 
 .certificate-section {
@@ -37,6 +32,10 @@
   @include responsive(tabletPortrait) {
     max-width: 100%;
     padding: 8rem 0;
+  }
+
+  @include responsive(mobile) {
+    margin: 0 auto;
   }
 
   .certificateCard__wrapper {
@@ -232,6 +231,9 @@
         line-height: 1.8;
       }
 
+      @include responsive(mobile) {
+        max-width: 70%;
+      }
       // font-weight: 200;
     }
 
