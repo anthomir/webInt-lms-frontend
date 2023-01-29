@@ -15,6 +15,10 @@
       grid-template-columns: auto;
       gap: 5rem;
     }
+
+    @include responsive(tabletPortrait) {
+      padding: 4rem 0;
+    }
   }
 
   &__userCard {
@@ -29,6 +33,10 @@
 
     @include responsive(desktopLarge) {
       padding: 1.5rem 2rem;
+    }
+
+    @include responsive(tabletPortrait) {
+      transform: scale(0.9);
     }
 
     &--3 {
@@ -75,18 +83,29 @@
       font-size: 1.8rem;
       margin-left: 0.8rem;
       font-weight: 400;
+      @include responsive(tabletPortrait) {
+        font-size: 2.2rem;
+      }
     }
 
     &--job {
       font-size: 1.4rem;
       color: #ff9595;
       margin-left: 0.8rem;
+
+      @include responsive(tabletPortrait) {
+        font-size: 1.8rem;
+      }
     }
 
     &--content {
       font-size: 1.2rem;
       line-height: 1.4;
       margin-left: 0.8rem;
+
+      @include responsive(tabletPortrait) {
+        font-size: 1.6rem;
+      }
     }
 
     &--teamHeading {
