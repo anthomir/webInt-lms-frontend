@@ -35,7 +35,7 @@
   }
 
   @include responsive(mobile) {
-    margin: 0 auto;
+    max-width: 50rem;
   }
 
   .certificateCard__wrapper {
