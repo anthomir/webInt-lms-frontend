@@ -42,6 +42,12 @@ const Navigation = () => {
               </li>
             </ul>
           </nav>
+
+          <label for="nav-toggle" class="header__burger">
+            <div class="header__burger--bar"></div>
+            <div class="header__burger--bar"></div>
+            <div class="header__burger--bar"></div>
+          </label>
         </div>
       </header>
       <Outlet />

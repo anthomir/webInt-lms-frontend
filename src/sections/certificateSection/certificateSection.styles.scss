@@ -200,7 +200,7 @@
     width: 40rem;
 
     @include responsive(mobile) {
-      width: 50%;
+      width: 30rem;
     }
 
     @include responsive(tabletLandscape) {
