@@ -17,6 +17,10 @@
 
   padding: 18rem 2rem;
 
+  @include responsive(tabletPortrait) {
+    max-width: 50rem;
+  }
+
   @include responsive(desktopLarge) {
     max-width: 130rem;
     padding: 15rem 0;
@@ -27,6 +31,11 @@
     max-width: 100rem;
     grid-gap: 0;
     padding-bottom: 1rem;
+  }
+
+  @include responsive(tabletPortrait) {
+    justify-content: center;
+    grid-gap: 5rem;
   }
 
   &__txt {

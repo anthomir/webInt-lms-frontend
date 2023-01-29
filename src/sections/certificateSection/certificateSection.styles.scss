@@ -15,10 +15,11 @@
   grid-template-columns: 64rem auto;
   margin: 0 auto;
   gap: 18rem;
-  padding: 18rem 30px;
+  padding: 18rem 30rem;
 
   @include responsive(tabletLandscape) {
     gap: 2rem;
+    padding: 10rem 30rem;
   }
 
   color: #f2f6ff;
@@ -208,6 +209,12 @@
       @include responsive(desktopLarge) {
         font-weight: 200;
       }
+
+      @include responsive(tabletLandscape) {
+        width: 50rem;
+        line-height: 1.8;
+      }
+
       // font-weight: 200;
     }
 

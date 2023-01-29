@@ -7,7 +7,7 @@ import "./hero.styles.scss";
 const Hero = () => {
   return (
     <section className="section-hero">
-      <WaveBackground />
+      <WaveBackground className="hero__background" />
       <div className="hero">
         <div className="hero__txt">
           <h1 className="heading-primary">
