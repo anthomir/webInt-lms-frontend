@@ -22,6 +22,10 @@
     gap: 2rem;
   }
 
+  @include responsive(mobile) {
+    overflow-x: hidden;
+  }
+
   color: #f2f6ff;
 
   @include responsive(tabletLandscape) {
