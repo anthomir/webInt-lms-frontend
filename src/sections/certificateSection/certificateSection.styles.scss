@@ -17,15 +17,16 @@
   gap: 18rem;
   padding: 18rem 30px;
 
+  @include responsive(tabletLandscape) {
+    gap: 2rem;
+  }
+
   color: #f2f6ff;
 
   @include responsive(tabletLandscape) {
-    // grid-template-columns: auto;
-    // justify-content: center;
-    // grid-column: 2 / 3;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-column: 2 / 3;
   }
 
   .certificateCard__wrapper {
@@ -34,6 +35,10 @@
 
     &:hover {
       transform: rotateY(-30deg);
+    }
+
+    @include responsive(tabletLandscape) {
+      height: 28rem;
     }
   }
 
@@ -71,6 +76,11 @@
     }
 
     &--card1 {
+      @include responsive(tabletLandscape) {
+        // left: -8rem;
+        top: -4rem;
+      }
+
       width: 33.5rem;
       height: 22rem;
       bottom: 5rem;
@@ -92,6 +102,11 @@
       border-radius: 30px;
     }
     &--card2 {
+      // @include responsive(tabletLandscape) {
+      //   left: -2rem;
+      //   top: -3rem;
+      // }
+
       top: -2.2rem;
       left: 18rem;
       width: 31.5rem;
@@ -111,6 +126,11 @@
       border-radius: 30px;
     }
     &--card3 {
+      // @include responsive(tabletLandscape) {
+      //   left: 4rem;
+      //   top: -2rem;
+      // }
+
       top: -1rem;
       left: 28rem;
       width: 29.5rem;
@@ -131,6 +151,11 @@
       border-radius: 30px;
     }
     &--card4 {
+      // @include responsive(tabletLandscape) {
+      //   left: 11rem;
+      //   top: 1rem;
+      // }
+
       top: 1rem;
       left: 38rem;
       width: 26.818rem;
@@ -155,6 +180,14 @@
     display: grid;
     gap: 2rem;
     width: 40rem;
+
+    @include responsive(tabletLandscape) {
+      width: 80rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
     &--title {
       @include responsive(desktopLarge) {
