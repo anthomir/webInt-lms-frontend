@@ -24,6 +24,11 @@
     max-width: 100%;
   }
 
+  @include responsive(mobile) {
+    max-width: 50%;
+    justify-content: center;
+  }
+
   &__card {
     width: 59.7rem;
     height: 40rem;

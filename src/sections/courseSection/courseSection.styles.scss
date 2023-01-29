@@ -24,6 +24,10 @@
     margin: 0 auto;
   }
 
+  @include responsive(mobile) {
+    max-width: 50rem;
+  }
+
   &__description {
     max-width: 140rem;
     margin: 0 auto;
@@ -95,6 +99,10 @@
     @include responsive(desktopLarge) {
       font-size: 1.9rem;
     }
+
+    @include responsive(mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__logoWrapper {
@@ -140,6 +148,11 @@
   &__duration {
     @include responsive(desktopLarge) {
       margin-top: 10rem;
+    }
+
+    @include responsive(mobile) {
+      align-items: center;
+      justify-content: center;
     }
   }
 }

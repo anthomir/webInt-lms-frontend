@@ -22,6 +22,11 @@
   //   padding: 10rem 30rem;
   // }
 
+  @include responsive(mobile) {
+    gap: 10rem;
+    padding: 10rem 3rem;
+  }
+
   color: #f2f6ff;
 
   @include responsive(tabletLandscape) {
@@ -33,6 +38,11 @@
   @include responsive(tabletPortrait) {
     max-width: 100%;
     padding: 8rem 0;
+  }
+
+  @include responsive(mobile) {
+    max-width: 80%;
+    padding: 0 30rem;
   }
 
   .certificateCard__wrapper {
@@ -49,6 +59,10 @@
 
     @include responsive(tabletPortrait) {
       transform: scale(0.9);
+    }
+
+    @include responsive(mobile) {
+      transform: scale(0.7);
     }
   }
 
