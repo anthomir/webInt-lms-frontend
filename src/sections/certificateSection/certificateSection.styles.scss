@@ -30,6 +30,11 @@
     grid-column: 2 / 3;
   }
 
+  @include responsive(tabletPortrait) {
+    max-width: 100%;
+    padding: 8rem 0;
+  }
+
   .certificateCard__wrapper {
     position: relative;
     transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -40,6 +45,10 @@
 
     @include responsive(tabletLandscape) {
       height: 28rem;
+    }
+
+    @include responsive(tabletPortrait) {
+      transform: scale(0.9);
     }
   }
 
