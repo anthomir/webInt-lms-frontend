@@ -18,6 +18,10 @@
     transform: scale(0.7);
   }
 
+  @include responsive(mobile) {
+    transform: scale(0.5);
+  }
+
   &:hover frame {
     transform: rotateY(0deg) rotateX(0deg);
 

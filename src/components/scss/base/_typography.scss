@@ -21,6 +21,10 @@
     color: transparent;
   }
 
+  @include responsive(mobile) {
+    font-size: 3rem;
+  }
+
   &__mavens {
     background: linear-gradient(180deg, #ffd7ff 0%, #feddfe 100%);
     background-clip: text;
