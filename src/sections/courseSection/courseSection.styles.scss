@@ -9,12 +9,6 @@
   max-width: 140rem;
   margin: 0 auto;
   padding: 10rem 0;
-  // display: grid;
-  // grid-template-columns: 45rem auto;
-  // grid-gap: 8rem;
-  // align-items: end;
-  // padding: 10rem 0;
-  // color: #f2f6ff;
 
   @include responsive(desktopLarge) {
     padding: 6.5rem 0;
@@ -23,6 +17,11 @@
   @include responsive(tabletLandscape) {
     padding: 2rem 0;
     max-width: 100rem;
+  }
+
+  @include responsive(tabletPortrait) {
+    max-width: 60rem;
+    margin: 0 auto;
   }
 
   &__description {
@@ -40,6 +39,11 @@
 
     @include responsive(tabletLandscape) {
       grid-template-columns: auto;
+    }
+
+    @include responsive(tabletPortrait) {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -60,6 +64,10 @@
     @include responsive(tabletLandscape) {
       align-items: center;
     }
+
+    @include responsive(tabletPortrait) {
+      text-align: center;
+    }
   }
 
   &__list {
@@ -69,6 +77,13 @@
     @include responsive(tabletLandscape) {
       width: 80%;
       margin: 0 auto;
+    }
+
+    @include responsive(tabletPortrait) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
     }
   }
 

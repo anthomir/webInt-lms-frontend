@@ -20,6 +20,10 @@
     gap: 0;
   }
 
+  @include responsive(tabletPortrait) {
+    max-width: 100%;
+  }
+
   &__card {
     width: 59.7rem;
     height: 40rem;
