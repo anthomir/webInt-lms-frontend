@@ -14,7 +14,7 @@
   backdrop-filter: blur(6rem);
 
   @include responsive(desktopLarge) {
-    padding: 2rem 21rem;
+    padding: 2rem 20rem;
   }
 
   &__section {

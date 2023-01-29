@@ -19,7 +19,8 @@ const CourseSection = () => {
         <div className="courses__description">
           <div className="courses__txt">
             <h2 className="heading-secondary courses__heading">
-              Latest tools and platforms <br /> with Mavens.
+              Latest tools and platforms <br className="courses__heading--br" />{" "}
+              with Mavens.
             </h2>
 
             <p className="courses__description">

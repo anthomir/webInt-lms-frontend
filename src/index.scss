@@ -13,10 +13,12 @@ html {
 
   @include responsive(tabletLandscape) {
     font-size: 56.25%; // 1 rem = 9px = 9px/16px = 56.25%
+    overflow-x: hidden;
   }
 
   @include responsive(tabletPortrait) {
     font-size: 50%; // 1 rem = 8px = 8px/16px = 50%
+    overflow-x: hidden;
   }
 
   @include responsive(desktopLarge) {

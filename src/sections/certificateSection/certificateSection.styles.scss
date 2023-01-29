@@ -19,6 +19,15 @@
 
   color: #f2f6ff;
 
+  @include responsive(tabletLandscape) {
+    // grid-template-columns: auto;
+    // justify-content: center;
+    // grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
   .certificateCard__wrapper {
     position: relative;
     transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);

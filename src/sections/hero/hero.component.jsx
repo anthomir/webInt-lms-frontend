@@ -11,8 +11,8 @@ const Hero = () => {
       <div className="hero">
         <div className="hero__txt">
           <h1 className="heading-primary">
-            Unlock your potential with{" "}
-            <span className="heading-primary__mavens">Mavens</span>
+            Unlock your potential with
+            <span className="heading-primary__mavens"> Mavens</span>
           </h1>
 
           <p className="hero__description">
@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
           <HeroButton />
         </div>
-        <AnimationMockup />
+        <AnimationMockup className="hero__mockup" />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
-@use "../../components/scss/abstracts/" as *;
 @use "../../components/scss/base/" as *;
+@use "../../components/scss/abstracts/" as *;
 
 .section-hero {
   // background: linear-gradient(180deg, #2400ff 0%, #fff 100%);
@@ -14,12 +14,19 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8rem;
   align-items: center;
-  padding: 18rem 0;
+
+  padding: 18rem 2rem;
 
   @include responsive(desktopLarge) {
     max-width: 130rem;
     padding: 15rem 0;
-    grid-gap: 8rem;
+  }
+
+  @include responsive(tabletLandscape) {
+    grid-template-columns: auto;
+    max-width: 100rem;
+    grid-gap: 0;
+    padding-bottom: 1rem;
   }
 
   &__txt {
@@ -29,6 +36,17 @@
     justify-content: space-around;
     width: 52rem;
     gap: 4rem;
+
+    @include responsive(tabletLandscape) {
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      padding: 0 15rem;
+      background: linear-gradient(180deg, #ffd7ff 0%, #feddfe 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
   }
 
   &__description {
@@ -44,5 +62,9 @@
   &__btn-container {
     display: flex;
     gap: 3rem;
+  }
+
+  &__mockup {
+    align-items: center;
   }
 }

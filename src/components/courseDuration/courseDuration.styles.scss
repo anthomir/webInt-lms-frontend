@@ -14,6 +14,12 @@
     max-width: 140rem;
   }
 
+  @include responsive(tabletLandscape) {
+    grid-template-columns: auto;
+    width: 80rem;
+    gap: 0;
+  }
+
   &__card {
     width: 59.7rem;
     height: 40rem;
@@ -27,11 +33,20 @@
       transform: scale(0.95);
     }
 
+    @include responsive(tabletLandscape) {
+      transform: scale(0.8);
+      width: 60rem;
+      height: 40rem;
+    }
+
     &--1 {
       background: url("../../assets/animations/course-detail-1.svg"),
         rgba(15, 14, 71, 0.3);
       background-repeat: no-repeat;
       background-position: center;
+      @include responsive(tabletLandscape) {
+        background-size: 95%;
+      }
     }
 
     &--2 {
@@ -39,6 +54,9 @@
         rgba(15, 14, 71, 0.3);
       background-repeat: no-repeat;
       background-position: center;
+      @include responsive(tabletLandscape) {
+        background-size: 95%;
+      }
     }
   }
 }

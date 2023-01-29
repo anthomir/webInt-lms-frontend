@@ -20,6 +20,11 @@
     padding: 6.5rem 0;
   }
 
+  @include responsive(tabletLandscape) {
+    padding: 2rem 0;
+    max-width: 100rem;
+  }
+
   &__description {
     max-width: 140rem;
     margin: 0 auto;
@@ -32,19 +37,39 @@
     @include responsive(desktopLarge) {
       max-width: 130rem;
     }
+
+    @include responsive(tabletLandscape) {
+      grid-template-columns: auto;
+    }
   }
 
   &__heading {
+    @include responsive(tabletLandscape) {
+      &--br {
+        display: none;
+      }
+      margin: 0 auto;
+    }
   }
 
   &__txt {
     display: grid;
     gap: 2rem;
+    grid-template-columns: auto;
+
+    @include responsive(tabletLandscape) {
+      align-items: center;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @include responsive(tabletLandscape) {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 
   &__description {
