@@ -13,34 +13,36 @@ const Navigation = () => {
   return (
     <Fragment>
       <header className="header">
-        <Link to="/" className="header__icon">
-          <Logo />
-        </Link>
+        <div className="header__section">
+          <Link to="/" className="header__icon">
+            <Logo />
+          </Link>
 
-        <nav className="header__nav">
-          <ul className="header__nav--list">
-            <li className="header__nav--item">
-              <Link to="/" className="header__nav--link">
-                <Courses />
-                Courses
-              </Link>
-              <Link to="/" className="header__nav--link">
-                <Tutorials />
-                Tutorials
-              </Link>
-              <Link to="/" className="header__nav--link">
-                <LiveStreams />
-                Tutorials
-              </Link>
-              <Link to="/" className="header__nav--link">
-                <Search />
-              </Link>
-              <Link to="/" className="header__nav--link">
-                <Account />
-              </Link>
-            </li>
-          </ul>
-        </nav>
+          <nav className="header__nav">
+            <ul className="header__nav--list">
+              <li className="header__nav--item">
+                <Link to="/" className="header__nav--link">
+                  <Courses />
+                  Courses
+                </Link>
+                <Link to="/" className="header__nav--link">
+                  <Tutorials />
+                  Tutorials
+                </Link>
+                <Link to="/" className="header__nav--link">
+                  <LiveStreams />
+                  Tutorials
+                </Link>
+                <Link to="/" className="header__nav--link">
+                  <Search />
+                </Link>
+                <Link to="/" className="header__nav--link">
+                  <Account />
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <Outlet />
     </Fragment>

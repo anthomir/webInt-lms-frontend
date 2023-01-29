@@ -12,6 +12,10 @@
     height: 100rem;
     z-index: -1;
     overflow: hidden;
+
+    @include responsive(desktopLarge) {
+      height: 90rem;
+    }
   }
 
   .wave {
@@ -31,6 +35,10 @@
 
     &--3 {
       top: 65rem;
+
+      @include responsive(desktopLarge) {
+        top: 60rem;
+      }
     }
   }
 }

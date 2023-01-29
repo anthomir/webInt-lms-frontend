@@ -16,5 +16,11 @@
     width: 100%;
     z-index: -3;
     top: 5rem;
+
+    @include responsive(desktopLarge) {
+      top: -3rem;
+      left: -10rem;
+      width: 150%;
+    }
   }
 }

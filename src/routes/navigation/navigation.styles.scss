@@ -6,13 +6,23 @@
   // margin-top: 2rem;
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
   padding: 2rem 20rem;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(6rem);
+
+  @include responsive(desktopLarge) {
+    padding: 2rem 21rem;
+  }
+
+  &__section {
+    width: 140rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__icon {
     color: #ffffffb3;
@@ -35,6 +45,10 @@
       gap: 1rem;
 
       transition: 0.3s ease-out;
+
+      @include responsive(desktopLarge) {
+        font-size: 1.2rem;
+      }
 
       &:hover {
         background: rgba(255, 255, 255, 0.1);

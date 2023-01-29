@@ -9,6 +9,10 @@
   -webkit-background-clip: text;
   color: transparent;
 
+  @include responsive(desktopLarge) {
+    font-size: 6rem;
+  }
+
   &__mavens {
     background: linear-gradient(180deg, #ffd7ff 0%, #feddfe 100%);
     background-clip: text;
@@ -21,6 +25,10 @@
   font-size: 3.5rem;
   font-weight: 600;
   line-height: 1.1;
+
+  @include responsive(desktopLarge) {
+    font-size: 3rem;
+  }
 }
 
 .heading-tertirary {
