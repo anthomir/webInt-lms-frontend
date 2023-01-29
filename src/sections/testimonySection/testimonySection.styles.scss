@@ -19,6 +19,12 @@
     @include responsive(tabletPortrait) {
       padding: 4rem 0;
     }
+
+    @include responsive(mobile) {
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__userCard {
