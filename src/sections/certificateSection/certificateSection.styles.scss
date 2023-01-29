@@ -22,10 +22,6 @@
     gap: 2rem;
   }
 
-  @include responsive(mobile) {
-    overflow-x: hidden;
-  }
-
   color: #f2f6ff;
 
   @include responsive(tabletLandscape) {
@@ -40,7 +36,7 @@
   }
 
   @include responsive(mobile) {
-    max-width: 50rem;
+    max-width: 100%;
   }
 
   .certificateCard__wrapper {
@@ -202,6 +198,10 @@
     display: grid;
     gap: 2rem;
     width: 40rem;
+
+    @include responsive(mobile) {
+      width: 50%;
+    }
 
     @include responsive(tabletLandscape) {
       width: 80rem;
